@@ -17,7 +17,7 @@ namespace Minimal {
             return model;
         }
 
-        void addClause(SOlVER_NAMESPACE::vec<SOlVER_NAMESPACE::Lit> &lits) {}
+        inline void addClause(SOlVER_NAMESPACE::vec<SOlVER_NAMESPACE::Lit> &lits) {solver.addClause_(lits); }
 
     private:
         int compute_model_count = 0;

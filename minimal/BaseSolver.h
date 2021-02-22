@@ -14,6 +14,7 @@ namespace Minimal {
         virtual bool solve() = 0;
 
         inline int nVars() const { return solver.nVars(); }
+        inline void newVar() { solver.newVar(); }
 
         virtual SOlVER_NAMESPACE::vec<SOlVER_NAMESPACE::lbool> &getModel() {
             return solver.model;
